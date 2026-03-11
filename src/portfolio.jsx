@@ -230,8 +230,8 @@ export default function Portfolio() {
                                     overflow: "hidden", // Tambahkan agar gambar tidak keluar batas lengkung
                                 }}>
                                     {/* <div style={{ userSelect: "none", marginTop: 20, color: ACCENT }}><Laptop size={130} strokeWidth={1} /></div> */}
-                                    {/* Ganti '/img/profil.jpeg' dengan path foto profil Anda. Atur objectPosition ("top", "center", "bottom", "right 20px") untuk menggeser fokus foto */}
-                                    <img src="/img/profil.jpeg" alt="Rizki Dwi Nur Utomo" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
+                                    {/* PENTING MENGGUNAKAN HURUF KAPITAL 'Profil.jpeg' */}
+                                    <img src="/img/Profil.jpeg" alt="Rizki Dwi Nur Utomo" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
                                 </div>
                                 <div style={{ position: "absolute", top: 24, left: -44, background: "white", borderRadius: 14, padding: "12px 16px", boxShadow: "0 8px 30px rgba(0,0,0,0.10)", display: "flex", alignItems: "center", gap: 10, animation: "floatA 3s ease-in-out infinite" }}>
                                     <div style={{ width: 36, height: 36, borderRadius: 10, background: "#dbeafe", display: "flex", alignItems: "center", justifyContent: "center" }}><Atom size={20} color="#2563eb" /></div>
