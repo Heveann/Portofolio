@@ -424,7 +424,7 @@ export default function Portfolio() {
                         <div style={{ opacity: contactInView ? 1 : 0, transform: contactInView ? "translateX(0)" : "translateX(-30px)", transition: "all 0.7s cubic-bezier(0.4,0,0.2,1)" }}>
                             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
                                 {[
-                                    { icon: <Mail size={22} color={ACCENT} />, label: "Email", value: "rizki.dnur@gmail.com", href: "mailto:rizki.dnur@gmail.com" },
+                                    { icon: <Mail size={22} color={ACCENT} />, label: "Email", value: "rizki.dnu@gmail.com", href: "mailto:rizki.dnur@gmail.com" },
                                     { icon: <Linkedin size={22} color={ACCENT} />, label: "LinkedIn", value: "linkedin.com/in/rizkidwinurutomo", href: "https://www.linkedin.com/in/rizki-dwi-nur-utomo-66074431b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
                                     { icon: <Github size={22} color={ACCENT} />, label: "GitHub", value: "github.com/Heveann", href: "https://github.com/Heveann" },
                                     { icon: <MapPin size={22} color={ACCENT} />, label: "Lokasi", value: "Semarang, Jawa Tengah, Indonesia", href: null },
