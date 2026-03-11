@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import {
-    Monitor, Palette, Server, Smartphone, Rocket, Lock,
-    BarChart3, ShoppingBag, GraduationCap, HeartPulse, Users, Sparkles,
-    Laptop, Atom, Briefcase, Calendar, Handshake, Mail, Linkedin, Github, MapPin, Heart, Menu, X
+    Monitor, Palette, Smartphone, Rocket,
+    GraduationCap, Sparkles,
+    Atom, Briefcase, Handshake, Mail, Linkedin, Github, MapPin, Heart, Menu, X
 } from "lucide-react";
 
 const ACCENT = "#0ea5e9";
@@ -18,7 +18,7 @@ function useInView(threshold = 0.15) {
         );
         if (ref.current) obs.observe(ref.current);
         return () => obs.disconnect();
-    }, []);
+    }, [threshold]);
     return [ref, inView];
 }
 
@@ -116,7 +116,6 @@ export default function Portfolio() {
         setActiveNav(id);
     };
 
-    const filters = ["Semua", "Web App", "Machine Learning", "E-Commerce", "LMS", "Telemedicine", "Dashboard", "Portfolio"];
     const filtered = activeFilter === "Semua" ? portfolio : portfolio.filter(p => p.cat === activeFilter);
 
     return (
